@@ -18,6 +18,9 @@ public class CarEngineCapacity extends BaseEntity {
 		super();
 		this.engineCapacity = engineCapacity;
 	}
+	public CarEngineCapacity() {
+		
+	}
 
 	public String getEngineCapacity() {
 		return engineCapacity;

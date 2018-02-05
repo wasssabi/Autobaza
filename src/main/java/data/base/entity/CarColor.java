@@ -16,6 +16,9 @@ public class CarColor extends BaseEntity {
 		super();
 		this.color = color;
 	}
+	public CarColor() {
+		
+	}
 
 	public String getColor() {
 		return color;

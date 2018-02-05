@@ -28,7 +28,9 @@ public class CarModel extends BaseEntity {
 	private Carmake carMake;
 	
 	
-	
+	public CarModel() {
+		
+	}
 
 	public int getModelTitle() {
 		return modelTitle;
@@ -48,6 +50,30 @@ public class CarModel extends BaseEntity {
 	public CarModel(int modelTitle) {
 		super();
 		this.modelTitle = modelTitle;
+	}
+
+	public CarEngineCapacity getCarEngineCapacity() {
+		return carEngineCapacity;
+	}
+
+	public void setCarEngineCapacity(CarEngineCapacity carEngineCapacity) {
+		this.carEngineCapacity = carEngineCapacity;
+	}
+
+	public CarFuelType getCarFuelType() {
+		return carFuelType;
+	}
+
+	public void setCarFuelType(CarFuelType carFuelType) {
+		this.carFuelType = carFuelType;
+	}
+
+	public CarColor getCarColor() {
+		return carColor;
+	}
+
+	public void setCarColor(CarColor carColor) {
+		this.carColor = carColor;
 	}
 	
 	

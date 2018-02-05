@@ -29,12 +29,31 @@ public class Car extends BaseEntity {
 
 	@Override
 	public String toString() {
-		return "Car [sell_price=" + sell_price + "]";
+		return "Car [sell_price=" + sell_price + ", carMakeq=" + carMakeq + ", carSeller=" + carSeller + "]";
 	}
 
 	public Car(BigDecimal sell_price) {
 		super();
 		this.sell_price = sell_price;
+	}
+
+	public Carmake getCarMakeq() {
+		return carMakeq;
+	}
+
+	public void setCarMakeq(Carmake carMakeq) {
+		this.carMakeq = carMakeq;
+	}
+
+	public CarSeller getCarSeller() {
+		return carSeller;
+	}
+
+	public void setCarSeller(CarSeller carSeller) {
+		this.carSeller = carSeller;
 	} 
+	public Car() {
+		
+	}
 	
 }

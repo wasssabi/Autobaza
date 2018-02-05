@@ -20,6 +20,9 @@ public class CarFuelType extends BaseEntity {
 		super();
 		this.fuelType = fuelType;
 	}
+	public CarFuelType() {
+		
+	}
 
 	public String getFuelType() {
 		return fuelType;

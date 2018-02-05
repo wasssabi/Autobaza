@@ -41,11 +41,22 @@ public class Carmake extends BaseEntity {
 	public String toString() {
 		return "Carmake [makeTitle=" + makeTitle + ", manufactureYear=" + manufactureYear + "]";
 	}
+	public Carmake() {
+		
+	}
 
 	public Carmake(int makeTitle, int manufactureYear) {
 		super();
 		this.makeTitle = makeTitle;
 		this.manufactureYear = manufactureYear;
+	}
+
+	public CarModel getCarModel() {
+		return carModel;
+	}
+
+	public void setCarModel(CarModel carModel) {
+		this.carModel = carModel;
 	}
 	
 }
